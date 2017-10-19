@@ -1,0 +1,19 @@
+<h1 class="h1inline">Plan Your Wedding</h1>       <a href="dashboard">Dashboard</a>  |  <a href="logout">Log Out</a>
+<br>
+<br>
+@model wedding.Models.Wedding
+<div asp-validation-summary="All"></div>
+<form asp-controller="User" asp-action="create" method="post">
+    <fieldset>
+         <legend>Register</legend>
+        <label asp-for="Wedder1">Wedder One:</label>
+        <input asp-for="Wedder1"/><br>
+        <label asp-for="Wedder2">Wedder Two:</label>
+        <input asp-for="Wedder2"/><br>
+        <label asp-for="Date">Date:</label>
+        <input type="datetime" asp-for="Date"/><br>
+        <label asp-for="Address">Wedding Address:</label>
+        <input asp-for="Address"/><br>
+        <button type="submit" class="submitbutton">Create</button>
+    </fieldset>   
+</form>

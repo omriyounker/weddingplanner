@@ -1,0 +1,14 @@
+@{
+    ViewData["Title"] = "Wedding Planner";
+}
+<h1 class="h1inline">@ViewBag.Wed.Wedder1 and @ViewBag.Wed.Wedder2 's Wedding</h1> <a href="/dashboard">Dashboard</a>  |  <a href="/logout">Log Out</a><br>
+<br>
+<h2>Date: @ViewBag.Wed.Date.ToString("MMM d yyyy")</h2>
+<h2>Guests:</h2>
+<ul>
+    @{
+        foreach(var item in ViewBag.Wed.Coming){
+            <li>@item.User.FirstName @item.User.LastName</li>
+        }
+    }
+</ul>

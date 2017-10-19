@@ -1,0 +1,19 @@
+/*Write all of your CSS here*/
+fieldset{
+    width:400px;
+}
+label{
+    display: inline-block;
+    width:150px;
+    text-align: right;
+    margin: 5px 0px;
+
+}
+.submitbutton{
+    margin-left: 200px;
+    padding: 2px;
+    border-radius: 3px;
+}
+form{
+    display:inline-block;
+}
